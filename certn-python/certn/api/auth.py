@@ -8,7 +8,9 @@ class Auth(API):
     def login(self):
         '''basic authentication returns the user id and token'''
         response = self.client.post(
-            path=f'{self.path}/authenticate/', data={'expires': None}, is_authenticated=False
+            path=f'{self.path}/authenticate/',
+            data={'expires': None},
+            is_authenticated=False,
         )
 
         return response.get('user_id'), response.get('token')

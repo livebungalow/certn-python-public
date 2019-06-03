@@ -10,15 +10,23 @@ class Client(object):
     module may be called from a ``.Client`` instance.
     '''
 
-    URL_MAPPING = {'dev': 'demo-api', 'prod': 'api'}
+    URL_MAPPING = {'dev': 'demo-api', 'stage': 'demo-api', 'prod': 'api'}
 
     def __init__(
-        self, username, password, environment='dev', timeout=requester.DEFAULT_TIMEOUT
+        self,
+        username,
+        password,
+        environment='dev',
+        url=None,
+        timeout=requester.DEFAULT_TIMEOUT,
     ):
 
         self.environment = environment
         self.timeout = timeout
         self.url = f'https://{self.URL_MAPPING[self.environment]}.certn.co'
+
+        if url is not None:
+            self.url = url
 
         # API classes
         self.Auth = api.Auth(self)

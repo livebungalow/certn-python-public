@@ -21,9 +21,7 @@ class Properties(API):
         return Property(self.client.post(f'{self.path}/', data), api=self)
 
     def update(self, property_id, data):
-        return Property(
-            self.client.put(f'{self.path}/{property_id}/', data), api=self
-        )
+        return Property(self.client.put(f'{self.path}/{property_id}/', data), api=self)
 
     def delete(self, property_id):
         return self.client.delete(f'{self.path}/{property_id}/')

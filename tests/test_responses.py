@@ -1341,3 +1341,10 @@ PROPERTIES_LIST_RESPONSE = {
     'previous': None,
     'results': [PROPERTY_GET_RESULT],
 }
+
+API_ERROR_SAMPLE_JSON = '''{
+"error_type": "INVALID_REQUEST",
+"error_message": "This is an invalid request",
+"error_code": 400,
+"display_message": None
+}'''
