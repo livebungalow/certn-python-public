@@ -9,15 +9,11 @@ class Applications(API):
     def invite(self, body):
         '''Send an email invitation to start an application'''
 
-        return Application(
-            self.client.post(f'{self.path}/invite/', data=body), api=self
-        )
+        return Application(self.client.post(f'{self.path}/invite/', data=body), api=self)
 
     def quick(self, body):
         '''Quick Application submission returns an unfinished application'''
-        return Application(
-            self.client.post(f'{self.path}/quick/', data=body), api=self
-        )
+        return Application(self.client.post(f'{self.path}/quick/', data=body), api=self)
 
 
 class Application:
