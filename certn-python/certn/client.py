@@ -10,7 +10,7 @@ class Client(object):
     module may be called from a ``.Client`` instance.
     '''
 
-    URL_MAPPING = {'dev': 'demo-api', 'stage': 'demo-api', 'prod': 'api'}
+    URL_MAPPING = {'dev': 'demo-api', 'stage': 'demo-api', 'production': 'api'}
 
     def __init__(
         self,
