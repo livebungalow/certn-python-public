@@ -3,7 +3,7 @@ certn-python
 
 [![Latest PyPI version](https://img.shields.io/pypi/v/certn-python.svg)](https://pypi.python.org/pypi/certn-python)
 
-[![Latest Travis CI build status](https://travis-ci.com/livebungalow/certn-python.png)](https://travis-ci.com/livebungalow/certn-python)
+[![Latest Travis CI build status](https://travis-ci.com/livebungalow/certn-python-public.png)](https://travis-ci.com/livebungalow/certn-python-public)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
