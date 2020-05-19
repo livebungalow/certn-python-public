@@ -1,5 +1,6 @@
-certn-python
-============
+# certn-python
+
+A Python client for [Certn. API](https://certn.co/api/)
 
 [![Latest PyPI version](https://img.shields.io/pypi/v/certn-python.svg)](https://pypi.python.org/pypi/certn-python)
 
@@ -9,27 +10,19 @@ certn-python
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-
-A python client for Certn API
-
-
-Installation
-------------
+## Installation
 
 ```bash
 pip install certn-python
 ```
 
-Requirements
-------------
+## Requirements
 
- - ```requests>=2,<3```
+- ```requests>=2,<3```
 
-Basic Usage
------------
+## Basic Usage
 
 Submit an application and check its results
-
 
 ```python
 from certn import Client
@@ -166,11 +159,6 @@ with Client(username, password) as client:
 
 ```
 
-Authors
--------
+## Authors
 
-`certn-python` was written by `Bungalow Living <engineering@bungalow.com>`.
-
-
-[certn-python](#certn-python) was written by [Bungalow
-Living](engineering@bungalow.com).
+[certn-python](#certn-python) was written by [Bungalow Living](engineering@bungalow.com).
