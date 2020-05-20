@@ -22,7 +22,7 @@ with open(join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='certn-python',
-    version='1.2.3',
+    version='1.2.4',
     url='https://github.com/livebungalow/certn-python-public',
     license='MIT',
     author='Bungalow Living',
